@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:productos_app/widgets/navigator_widget.dart';
 import 'package:provider/provider.dart';
 
 import 'package:productos_app/screens/screens.dart';
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Productos App',
-      initialRoute: 'login',
+      // initialRoute: 'login',
+      home: const NavigatorWidget(),
       routes: {
         
         'checking': ( _ ) => CheckAuthScreen(),
